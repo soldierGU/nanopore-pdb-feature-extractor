@@ -5,32 +5,33 @@ project:
 input:
   pdb_id: 5JZT
   base_pdb_id: 5JZT
-  reference_structure: aerolysin_WT_FoldX
   nanopore_id: aerolysin_T232K
-  structure_file: data/raw/T232K/T232K.pdb
+  structure_file: data/raw/T232K/5JZT_T232K_model.pdb
   file_format: pdb
   assembly_type: foldx_mutant
 
 structure:
-  use_model_index: 0
-  use_standard_residues_only: true
-  use_ca_only: true
+  model_index: 0
   expected_chains: ["A", "B", "C", "D", "E", "F", "G"]
+  standard_residues_only: true
+  ca_only: true
 
 pore:
-  axis_mode: z_axis
-  center_mode: xy_mean
+  axis: z
+  center_method: xy_mean
   inner_radius_threshold: 20.0
 
 mutation:
-  is_mutant: false
-  mutations: []
+  is_mutant: true
+  mutations:
+    - original: T
+      residue_number: 232
+      mutant: K
+      label: T232K
+      chain_scope: all
 
 output:
   processed_dir: data/processed
-  chain_summary_dir: data/processed/chain_summary
   residue_features_dir: data/processed/residue_features
   inner_residues_dir: data/processed/inner_residues
-  pore_profiles_dir: data/processed/pore_profiles
-  comparison_dir: data/processed/comparisons
-  figures_dir: outputs/figures
+  logs_dir: outputs/logs
