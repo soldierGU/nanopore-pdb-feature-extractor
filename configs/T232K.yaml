@@ -30,8 +30,18 @@ mutation:
       label: T232K
       chain_scope: all
 
+profile:
+  zbin_count: 20
+  use_inner_only: true
+
+dssp:
+  executable: mkdssp
+  ss8_unknown: C
+
 output:
   processed_dir: data/processed
   residue_features_dir: data/processed/residue_features
   inner_residues_dir: data/processed/inner_residues
   logs_dir: outputs/logs
+  pore_profiles_dir: data/processed/pore_profiles
+

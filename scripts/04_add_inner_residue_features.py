@@ -92,6 +92,8 @@ def main() -> None:
     print(f"Output inner residues   : {output_inner_file}")
 
     df = pd.read_csv(input_file)
+    if "insertion_code" in df.columns:
+        df["insertion_code"] = df["insertion_code"].fillna("")
 
     required_cols = ["ca_x", "ca_y"]
     for col in required_cols:

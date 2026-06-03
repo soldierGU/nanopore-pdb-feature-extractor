@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="20260603 20:20">
+    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="20260603 20:32">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/T232K.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/T232K.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/03_add_physicochemical_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/03_add_physicochemical_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/04_add_inner_residue_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/04_add_inner_residue_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/05_add_ss8_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/05_add_ss8_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/07_build_zbin_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/07_build_zbin_profile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/nanopore-pdb-feature-extractor/data/raw/T274S",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -98,11 +101,20 @@
       <option name="project" value="LOCAL" />
       <updated>1780489249356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20260603 20:32">
+      <option name="closed" value="true" />
+      <created>1780489975090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780489975090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20260603 20:20" />
-    <option name="LAST_COMMIT_MESSAGE" value="20260603 20:20" />
+    <MESSAGE value="20260603 20:32" />
+    <option name="LAST_COMMIT_MESSAGE" value="20260603 20:32" />
   </component>
 </project>

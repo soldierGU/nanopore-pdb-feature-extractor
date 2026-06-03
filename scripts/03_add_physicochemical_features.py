@@ -156,6 +156,8 @@ def main() -> None:
     print(f"Output: {output_file}")
 
     df = pd.read_csv(input_file)
+    if "insertion_code" in df.columns:
+        df["insertion_code"] = df["insertion_code"].fillna("")
 
     if "one_letter" not in df.columns:
         if "residue_name" not in df.columns:
