@@ -1,0 +1,36 @@
+project:
+  name: nanopore-pdb-feature-extractor
+  version: 0.1.0
+
+input:
+  pdb_id: 5JZT
+  base_pdb_id: 5JZT
+  reference_structure: aerolysin_WT_FoldX
+  nanopore_id: aerolysin_T232K
+  structure_file: data/raw/T232K/T232K.pdb
+  file_format: pdb
+  assembly_type: foldx_mutant
+
+structure:
+  use_model_index: 0
+  use_standard_residues_only: true
+  use_ca_only: true
+  expected_chains: ["A", "B", "C", "D", "E", "F", "G"]
+
+pore:
+  axis_mode: z_axis
+  center_mode: xy_mean
+  inner_radius_threshold: 20.0
+
+mutation:
+  is_mutant: false
+  mutations: []
+
+output:
+  processed_dir: data/processed
+  chain_summary_dir: data/processed/chain_summary
+  residue_features_dir: data/processed/residue_features
+  inner_residues_dir: data/processed/inner_residues
+  pore_profiles_dir: data/processed/pore_profiles
+  comparison_dir: data/processed/comparisons
+  figures_dir: outputs/figures

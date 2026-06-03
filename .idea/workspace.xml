@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="" />
+    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/configs/T232K.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/WT_FoldX.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/K238G/5JZT_K238G_model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/K238Q/5JZT_K238Q_model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/T232K/5JZT_T232K_model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/T232K_K238Q/5JZT_T232K_K238Q_model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/T274S/5JZT_T274S_model.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/WT_FoldX/5JZT_assembly_Repair.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/raw/reference/5JZT_assembly.cif" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="3" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "soldierGU"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/soldierGU/nanopore-pdb-feature-extractor",
+    "accountId": "03d86167-c6b0-4583-b3c7-fc13c28d00e5"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -26,9 +61,26 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/nanopore-pdb-feature-extractor/data/raw/T274S",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\nanopore-pdb-feature-extractor\data\raw\T274S" />
+      <recent name="E:\nanopore-pdb-feature-extractor\data\raw\K238G" />
+      <recent name="E:\nanopore-pdb-feature-extractor\data\raw\K238Q" />
+      <recent name="E:\nanopore-pdb-feature-extractor\data\raw\T232K_K238Q" />
+      <recent name="E:\nanopore-pdb-feature-extractor\data\raw\T232K" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\nanopore-pdb-feature-extractor\src\nanopore_features\core" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
