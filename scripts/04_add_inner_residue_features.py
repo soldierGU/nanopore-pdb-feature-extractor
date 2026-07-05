@@ -123,7 +123,7 @@ def main() -> None:
     print(f"[INFO] Inner candidate residues: {len(inner_df)}")
     print(f"[INFO] Center method: {center_method}")
     print(f"[INFO] Pore center: x={center_x:.3f}, y={center_y:.3f}")
-    print(f"[INFO] Inner radius threshold: {inner_radius_threshold:.3f} Å")
+    print(f"[INFO] Inner radius threshold: {inner_radius_threshold:.3f} Angstrom")
 
     print("\nMutation rows:")
     mutation_rows = df[df["is_mutation_site"]].copy()

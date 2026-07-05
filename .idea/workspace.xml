@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="20260603 20:32">
+    <list default="true" id="48ad97be-b50e-4744-8fb9-81bb51859610" name="Changes" comment="20260603 21：50">
+      <change beforePath="$PROJECT_DIR$/.idea/nanopore-pdb-feature-extractor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nanopore-pdb-feature-extractor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/T232K.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/T232K.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/03_add_physicochemical_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/03_add_physicochemical_features.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/04_add_inner_residue_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/04_add_inner_residue_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/05_add_ss8_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/05_add_ss8_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/06_add_sasa_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/06_add_sasa_features.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/07_build_zbin_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/07_build_zbin_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nanopore_features/features/sasa.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nanopore_features/features/sasa.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="3" />
+    <option name="cachedIndexableFilesCount" value="60" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,42 +30,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "soldierGU"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;soldierGU&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/soldierGU/nanopore-pdb-feature-extractor",
-    "accountId": "03d86167-c6b0-4583-b3c7-fc13c28d00e5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soldierGU/nanopore-pdb-feature-extractor.git&quot;,
+    &quot;accountId&quot;: &quot;03d86167-c6b0-4583-b3c7-fc13c28d00e5&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3EcTc0MSrsO4r9eBrn9ykzDzIRC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/nanopore-pdb-feature-extractor/data/raw/T274S",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/nanopore-pdb-feature-extractor/data/raw/T274S&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\nanopore-pdb-feature-extractor\data\raw\T274S" />
@@ -109,12 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1780489975090</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20260603 21：50">
+      <option name="closed" value="true" />
+      <created>1780494637074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780494637074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20260603 20:20" />
     <MESSAGE value="20260603 20:32" />
-    <option name="LAST_COMMIT_MESSAGE" value="20260603 20:32" />
+    <MESSAGE value="20260603 21：50" />
+    <option name="LAST_COMMIT_MESSAGE" value="20260603 21：50" />
   </component>
 </project>

@@ -202,6 +202,19 @@ def aggregate_zbin_profile(
         for aa in list("ACDEFGHIKLMNPQRSTVWY"):
             row[f"aa_{aa}_count"] = int(aa_counts.get(aa, 0))
 
+        if "sasa_rel" in g.columns:
+            row["sasa_rel_mean"] = safe_mean(g["sasa_rel"])
+            row["sasa_rel_min"] = float(g["sasa_rel"].min())
+            row["sasa_rel_max"] = float(g["sasa_rel"].max())
+            row["sasa_rel_std"] = safe_std(g["sasa_rel"])
+        if "sasa_abs" in g.columns:
+            row["sasa_abs_mean"] = safe_mean(g["sasa_abs"])
+            row["sasa_abs_sum"] = float(g["sasa_abs"].sum())
+        if "is_surface_exposed" in g.columns:
+            row["surface_exposed_count"] = int(g["is_surface_exposed"].sum())
+        if "is_buried" in g.columns:
+            row["buried_count"] = int(g["is_buried"].sum())
+
         grouped_rows.append(row)
 
     profile = pd.DataFrame(grouped_rows)
@@ -219,6 +232,8 @@ def aggregate_zbin_profile(
         "positive_count",
         "negative_count",
         "charged_count",
+        "surface_exposed_count",
+        "buried_count",
     ] + [f"aa_{aa}_count" for aa in list("ACDEFGHIKLMNPQRSTVWY")]
 
     for col in count_cols:
@@ -238,6 +253,7 @@ def aggregate_zbin_profile(
     numeric_fill_zero_cols = [
         "charge_sum",
         "residue_volume_sum",
+        "sasa_abs_sum",
     ]
     for col in numeric_fill_zero_cols:
         if col in profile.columns:
